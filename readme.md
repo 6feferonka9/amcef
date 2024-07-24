@@ -9,7 +9,7 @@ Poznámky:
 2. Spravil som iba basic Zod validáciu
 3. Požiadavka: Viaceré routy aplikácie - nemal som moc čo routovať, je tam iba jeden, nechcel som zbytočne prekomplikovávať appku
 
-Čo by som dorobil + refactoring:
+Čo by som dorobil + refactoring + cleanup:
 1. Ohandloval viac edge-case scenáre (napríklad custom input do filtering searchParams)
 2. Pridal loading indikátory na buttony - pri vykonaní nejakej akcie
 3. Pridal loading skeletony pri requeste a čakaní na TODOS
@@ -17,3 +17,6 @@ Poznámky:
 5. V dynamickej route by som skôr použil slug kategórie ako ID, viac readable. Ak otváram link /category/work tak vidím hneď na čo klikám.
 6. Pridal možnosť na vymazávanie kategórii
 7. Pridal notifikácie - pri errore alebo úspešnej akcie (“failed to delete todo” alebo “category created”)
+8. Konzola vracia 500 pri kategoriach s prázdnym obsahom, pretože API vracia 404, čo si myslím že by mala byť prázdna Array.
+
+Performance na Netlify je dosť zlý, local build aj dev ide podstatne lepšie, skontroloval som aj performance pre istotu. Predpokladám že tu budú tie ich free tier servery.
