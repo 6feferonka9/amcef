@@ -18,5 +18,6 @@ Poznámky:
 6. Pridal možnosť na vymazávanie kategórii
 7. Pridal notifikácie - pri errore alebo úspešnej akcie (“failed to delete todo” alebo “category created”)
 8. Konzola vracia 500 pri kategoriach s prázdnym obsahom, pretože API vracia 404, čo si myslím že by mala byť prázdna Array.
+9. Kalendár, dátum len v budúcnosti
 
 Performance na Netlify je dosť zlý, local build aj dev ide podstatne lepšie, skontroloval som aj performance pre istotu. Predpokladám že tu budú tie ich free tier servery.
